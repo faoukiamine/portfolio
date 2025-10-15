@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "postcss ./src/css/tailwind.css -o ./public/build/tailwind.css --watch"
+    "dev": "postcss ./src/css/tailwind.css -o ./public/build/tailwind.css --watch",
+    "build:css": "postcss ./src/css/tailwind.css -o ./public/build/tailwind.css",
+    "start": "live-server public"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +14,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss-cli": "^11.0.1",
-    "tailwindcss": "^3.4.17"
+    "tailwindcss": "^3.4.17",
+    "live-server": "^1.2.2"
   }
 }
